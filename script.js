@@ -21,11 +21,11 @@ const generatePassword = () => {
   options.forEach(option => {    //looping through each option's checkbox
     if (option.checked) {      //if checkbox is checked
         //if checkbox id isn't exc-dupliate && spaces
-      if(options.id !== "exc-duplicate" && options.id !== "spaces"){
+      if(option.id !== "exc-duplicate" && option.id !== "spaces"){
           //adding particular key value from character object to staticPassword
           staticPassword += characters[option.id];
-        }else if( options.id === "spaces"){ //if checkbox id is spaces
-            staticPassword += `${staticPassword} `; //adding space at the beginning & end of staticPassword
+        }else if( option.id === "spaces"){ //if checkbox id is spaces
+            staticPassword += ` ${staticPassword}  `; //adding space at the beginning & end of staticPassword
         }else{ //else pass true value to excludeDuplicate
             excludeDuplicate = true;
         }
