@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  background-color: lightseagreen;
+}
+.container {
+  width: 450px;
+  border-radius: 10px;
+  background: white;
+}
+.container h2 {
+  font-weight: 550;
+  font-size: 1.3rem;
+  padding: 1rem 1.175rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+.wrapper {
+  margin: 1.25rem 1.75rem;
+}
+.wrapper .input-box {
+  position: relative;
+}
+.input-box input {
+  width: 100%;
+  height: 53px;
+  font-size: 1.06rem;
+  font-weight: 550;
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  padding: 0 2.5rem 0 1rem;
+  color: #000;
+  background: none;
+}
+.input-box span {
+  position: absolute;
+  right: 20px;
+  line-height: 55px;
+  color: #aaa;
+  cursor: pointer;
+}
+.wrapper .pass-indicator {
+  width: 100%;
+  background: #dfdfdf;
+  height: 4px;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+  position: relative;
+}
+.pass-indicator::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  background: #f1c80b;
+}
+.wrapper .pass-length {
+  margin: 1.56rem 0 1.25rem;
+}
+.pass-length .details {
+  display: flex;
+  justify-content: space-between;
+}
+.pass-length input {
+  width: 100%;
+  height: 5px;
+}
+.pass-settings .options {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.pass-settings .options .option {
+  display: flex;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+  align-items: center;
+}
+.options .option:first-child {
+  pointer-events: none;
+}
+.options .option:first-child input {
+  opacity: 0.8;
+}
+.options .option input {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+.options .option label {
+  cursor: pointer;
+  padding-left: 0.63rem;
+}
+.wrapper .generate-btn {
+  width: 100%;
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  margin: 0.94rem 0 1.3rem;
+  color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: lightseagreen;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
